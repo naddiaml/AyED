@@ -1,0 +1,56 @@
+Funciones de biblioteca:
+→ ORDENAMIENTO
+    • burbuja (int v[ ], int cant);
+
+→ BUSQUEDA
+    • busquedaSecuencial (en lo posible no usar)
+    • bb(int v[ ], int cant, int buscado)
+
+→ ESTRUCTURAS ENLAZADAS
+    → Pilas
+        Suponiendo un...
+
+        Struct nodo{
+        Int dato
+        nodo *sgte;
+        };
+
+        • void Push(nodo *&pila, int dato)
+        • int Pop(nodo *&pila)
+
+    → Colas
+        Suponiendo un...
+
+        Struct nodo{
+        Int dato
+        nodo *sgte;
+        };
+
+        • void Encolar(nodo*&fte, nodo*&fin, int dato)
+        • int Desencolar(nodo*&fte, nodo*&fin)
+
+    → Listas
+        Suponiendo un...
+
+        Struct Info{
+        int valor;
+        };
+
+        Struct nodo{
+        Info dato
+        nodo *sgte;
+        };
+
+        → Para insertar
+            • nodo* insertarAlFinal(nodo*& lista, info dato)
+            • nodo* insertarOrdenado(nodo*&lista, info dato)
+            • nodo* insertarSinRepetir(nodo*& lista, info dato)
+
+        → Para buscar (devuelve el nodo correspondiente)
+            • nodo* buscar(nodo * lista, int valor)
+
+        → Para mostrar (imprime la lista*)
+            • void mostrar(nodo* lista)
+
+        → Para eliminar nodoPila
+            • eliminarNodo
